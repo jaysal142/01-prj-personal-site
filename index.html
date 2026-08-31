@@ -1,11 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Add your HTML content here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayden Salgado | Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio website for Jayden Salgado, an aspiring web developer building responsive and accessible digital experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="#top" class="brand" aria-label="Jayden Salgado home">salgado_j</a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+          <span class="toggle-icon" aria-hidden="true">☀</span>
+          <span class="toggle-label">Theme</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Senior • Computer Science</p>
+            <h1>Jayden Salgado</h1>
+            <p class="lead">
+              I build practical, user-focused digital experiences across web,
+              app, and game development while continuing to grow as a software developer.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="mailto:jayden.salgado@ucdenver.edu">Get In Touch</a>
+            </div>
+
+            <ul class="mini-stats" aria-label="Quick profile summary">
+              <li><strong>Senior</strong><span>University of Colorado Denver</span></li>
+              <li><strong>BA</strong><span>Computer Science</span></li>
+              <li><strong>2027</strong><span>Graduating Spring</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Profile photo and portfolio highlight">
+            <div class="photo-card">
+              <img src="img/me.png" alt="Jayden Salgado portrait" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Building useful digital experiences.</h2>
+        </div>
+
+        <div class="container about-layout">
+          <div class="about-text">
+            <p>
+              I’m a Computer Science student with 1.5 years of professional IT experience
+              in a university department, supporting faculty and students while managing
+              device lifecycle, onboarding, and asset inventory. That experience sharpened
+              my problem-solving mindset and helped me build a strong foundation in both
+              technical support and software development.
+            </p>
+            <p>
+              I’ve built and shipped projects across web, Android, and game development,
+              including canvas-based browser experiences with authentication, persistent
+              data, and gameplay systems. I’m currently developing a multiplayer
+              loot-extraction game in Unreal Engine with C++, while continuing to expand
+              my full-stack and design skills.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>Focus areas</h3>
+            <ul>
+              <li>Web development with HTML, CSS, PHP, and JavaScript</li>
+              <li>Mobile app development with Android Studio and Java</li>
+              <li>Game development with Unreal Engine and C++</li>
+              <li>IT systems support and asset management</li>
+              <li>UI/UX and user-centered product thinking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section accent-section">
+        <div class="container section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Recent work.</h2>
+        </div>
+
+        <div class="container project-list">
+          <a class="project-card-link" href="https://salgadojayden.me/projects/paintlaunch.html" target="_blank" rel="noreferrer">
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="tag">Web Development</span>
+                <span class="tag subtle">HTML / CSS / PHP</span>
+              </div>
+              <h3>Paint Launch</h3>
+              <p>
+                A browser-based canvas game where a player is launched from a cannon and
+                travels as far as possible. The experience includes a shop and inventory
+                system, parallax backgrounds, enemy AI, player authentication, and a
+                leaderboard powered by MySQL-backed persistent data.
+              </p>
+              <ul>
+                <li>Session-based user auth and live leaderboard</li>
+                <li>Upgradeable cannon shop and inventory systems</li>
+                <li>MySQL-powered persistent player data</li>
+              </ul>
+            </article>
+          </a>
+
+          <a class="project-card-link" href="https://salgadojayden.me/projects/closet_genie.html" target="_blank" rel="noreferrer">
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="tag">App Development</span>
+                <span class="tag subtle">Android / Java</span>
+              </div>
+              <h3>Closet Genie</h3>
+              <p>
+                A mobile wardrobe application that helps users store clothing items,
+                upload photos, and generate randomized outfit combinations from each
+                category for a faster, easier daily planning experience.
+              </p>
+              <ul>
+                <li>Category-based outfit generation</li>
+                <li>Photo upload and item organization</li>
+                <li>Functional user-focused wardrobe planning</li>
+              </ul>
+            </article>
+          </a>
+
+          <a class="project-card-link" href="https://salgadojayden.me/projects/simple_calc.html" target="_blank" rel="noreferrer">
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="tag">Web Development</span>
+                <span class="tag subtle">HTML / CSS / PHP</span>
+              </div>
+              <h3>Simple Pay Calculator</h3>
+              <p>
+                A paycheck calculator that allows users to enter their pay rate, hours,
+                and personal details, then view calculated gross pay, net pay, and tax
+                deductions in a clean results layout.
+              </p>
+              <ul>
+                <li>Form input and validation</li>
+                <li>Payroll and deduction calculations</li>
+                <li>PHP-driven results processing</li>
+              </ul>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools and technologies I’m using.</h2>
+        </div>
+
+        <div class="container skill-list" aria-label="Skills list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>Java</span>
+          <span>Responsive Design</span>
+          <span>Accessibility</span>
+          <span>Git</span>
+          <span>Visual Studio Code</span>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h3>Let’s build something meaningful.</h3>
+        </div>
+
+        <div class="footer-links">
+          <a href="mailto:jayden.salgado@ucdenver.edu">jayden.salgado@ucdenver.edu</a>
+          <a href="https://github.com/jaysal142" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/jayden-salgado-739556385" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const root = document.documentElement;
+      const toggleButton = document.getElementById('theme-toggle');
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+      const applyTheme = (theme) => {
+        root.setAttribute('data-theme', theme);
+        const isDark = theme === 'dark';
+        toggleButton.setAttribute('aria-pressed', String(isDark));
+        toggleButton.querySelector('.toggle-icon').textContent = isDark ? '☾' : '☀';
+        toggleButton.querySelector('.toggle-label').textContent = isDark ? 'Dark' : 'Light';
+      };
+
+      const savedTheme = localStorage.getItem('theme');
+      const initialTheme = savedTheme || (mediaQuery.matches ? 'dark' : 'light');
+      applyTheme(initialTheme);
+
+      toggleButton.addEventListener('click', () => {
+        const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', nextTheme);
+        applyTheme(nextTheme);
+      });
+
+      mediaQuery.addEventListener('change', (event) => {
+        if (!localStorage.getItem('theme')) {
+          applyTheme(event.matches ? 'dark' : 'light');
+        }
+      });
+    </script>
+  </body>
 </html>
